@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formacion Virtual | Bienvenida</title>
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="C:\Cursos\practica-web01\ccs\styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="header">
+        <h1>
+          <img src="images/logo.png" alt="Logo">
+        </h1>
+    </header>
+    <!---CREANDO NUESTRO MENU-->
+      <nav class="navbar">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes Somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#tarifas">Tarifas</a>
+        <a href="#localizacion">Localización</a>
+      </nav>
+      <section id="quienes-somos" class="content who">
+        <h2 class="title">Quiénes Somos</h2>
+        <p>Esta actividad corresponde a la segundad actividad de la materia: Desarrollo Web.</p>
+        <p>la cual es impartida por el Ing. JONATHAN VLADIMIR MATE VILLANUEVA en la Escuela Superior de Innovacion Técnologica de El Salvador.</p>
+      </section>
+      <!-----SECCION DE SERVICIOS-->
+      <section id="servicios" class="content services">
+        <h2 class="title">Servicios</h2>
+        <p>La ESIT te ofrece programas de estudio que te permitirán adquirir competencias para desempeñarte en el mundo laboral digital.</p>
+        <p>Adquiere nuevos conocimientos a través de nuestros cursos y certificaciones, que te permitirán desarrollar al máximo tu talento digital</p>
+        <ul class="list-services">
+          <li>
+            <figure>
+              <img src="images/ico1.png" alt="Angular">
+              <figcaption>Angular</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="images/ico2.png" alt="React">
+              <figcaption>React</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="images/ico3.png" alt="Vuejs">
+              <figcaption>Vuejs</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <!-----SECCION DE TARIFAS--->
+      <section id="tarifas" class="content tarifas">
+        <article class="contain">
+          <h2 class="title">Tarifas</h2>
+          <p>Prepárate para el mundo laboral! Nuestros programas están autorizados por el Ministerio de Educación, Ciencia y Tecnología de El Salvador</p>
+          <p>Las carreras ofrecidas por la ESIT, no requieren de una inversión financiera, ya que son de acceso publico para todos los Salvadoreños desde cualquier parte del mundo. Gracias al esfuerzo del estado.</p>
+          <a href="#contacto" class="btn">Contáctanos</a>
+        </article>
+      </section>
+      <!----SECCION OPINIONES-->
+      <section id="opiniones" class="content opiniones">
+        <h2 class="title">Opiniones</h2>
+        <div class="opinion-box">
+          <blockquote>
+            <p>"Formación Virtual ha transformado nuestra manera de trabajar con su increíble equipo y servicios."</p>
+            <cite>- Juan Pérez, CEO de Empresa XXXXXX</cite>
+          </blockquote>
+        </div>
+        <div class="opinion-box">
+          <blockquote>
+            <p>"La dedicación y profesionalismo de Formación Virtual es inigualable. ¡Altamente recomendado!"</p>
+            <cite>- María García, CTO de Empresa Y</cite>
+          </blockquote>
+        </div>
+      </section>
+      <!----SECCION Localización y Contactos---->
+      <section id="localizacion" class="content localization">
+        <h2 class="title">Localización</h2>
+        <p>Nos puedes encontrar en la web accediendo al enlace oficial <b>aula.esit.gob.sv</b> donde podras buscar la carrera que más te motivo a superarte profesional y técnologicamente</p>
+        <div id="map"></div>
+        <h3>Formulario de Contacto</h3>
+        <form id="contacto" action="enviar_formulario.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+      <!----SECCION DEL PIE DE LA PAGINA-->
+      <footer class="footer">
+        <p>&copy; 2024 Fazt. Todos los derechos reservados.</p>
+        <nav class="footer-nav">
+          <a href="#inicio">Inicio</a>
+          <a href="#quienes-somos">Quiénes Somos</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#tarifas">Tarifas</a>
+          <a href="#localizacion">Localización</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </footer>     
+</body>
+</html>
